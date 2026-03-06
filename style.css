@@ -89,13 +89,7 @@ nav a{
         justify-content: space-between;
     }
 
-@media screen and (max-width: 480px){
- #bod-tit,.home-cont{
-       width: 98%;
-    }
-
-   
-}
+ 
 
 .des-down{
     width: 100%;
@@ -105,6 +99,7 @@ nav a{
     display: flex;
     flex-direction: row;
      color: #bec3cf;
+  
 }
 
 .planettxt{
@@ -126,6 +121,34 @@ font-family: "Cinzel", sans-serif;
        background-size: cover;
 }
 
+ .down-line, .headdown{
+        max-width: 70px;
+        height: 2px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+ 
+    
+
+
+
+
+ 
+@media screen and (max-width: 480px){
+ #bod-tit,.home-cont, .des-cont{
+       width: 98%;
+    }
+ .planet-time{
+    margin: 0 auto;
+ }
+
+ nav{
+     width: 80%;
+ }
+   
+}
+
 @media screen and (max-width: 768px) {
     #bod-tit{
         max-width: 480px;
@@ -134,12 +157,24 @@ font-family: "Cinzel", sans-serif;
     nav a{
         font-size: 0.75rem;
         font-weight: 500;
+     
+    }
+     
+    .nav-numb{
+        display: none;
+    }
+    
+    nav{ 
+     width: 70%;
+        justify-content: space-around;
+         background: #131522 ;
+         height: 30px;
     }
 
     .logo-box{
         height: 50px;
         width: 50px;
-        transform: scale(0.75);
+        transform: scale(0.5);
     }
     .line{
         display: none;
@@ -185,9 +220,11 @@ font-family: "Cinzel", sans-serif;
         margin-top: 3rem;
     }
      .des-tit{
-        font-size: 1rem;
+        font-size: 0.95rem;
         word-spacing: 4.5px;
         letter-spacing: 2px;
+        margin-left: 1rem;
+        margin-top: 2rem;
     }
     
     .des-down{
@@ -195,21 +232,23 @@ font-family: "Cinzel", sans-serif;
         flex-direction: column-reverse;
         justify-content: space-between;
         margin-top: 4rem;
-        
+        width: 98%;
+        margin: 0 auto;
     }
 
     .planet-box{
         
-       width: 200px;
-       height: 200px;
+       width: 220px;
+       height: 220px;
+       margin: 0 auto;
     }
 
      
 
     .planet-name{
-        width: 50%;
-        justify-content: space-between;
-      
+        width: 80%;
+        justify-content: space-around;
+    
     }
 
 
@@ -219,21 +258,39 @@ font-family: "Cinzel", sans-serif;
     }
 
     .planettxt{
-        font-size: 1.05rem;
-        line-height: 26px;
+        font-size: 0.95rem;
+        line-height: 22px;
+        max-width: 38ch;
+        margin-left: 1rem;
     }
 
     .planet-time{
-        width: 70%;
+        width: 80%;
+        
     }
 
     .month-txt, .mil-txt{
-        font-size: 1.4rem;
+        font-size: 1.25rem;
     }
 
     .mil-tit, .month-tit{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
+    
+    .des-cont{
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto 2rem;
+        padding-left: 0.3rem;
+    }
+    .down-line{
+        max-width: 70px;
+        height: 2px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+   
 }
 
 @media screen and (min-width: 769px){
@@ -251,7 +308,10 @@ height: 70px;
 font-size: 0.9rem;
 justify-content: space-around;
 width: 55%;
+ 
     }
+
+   
 
     #bod-tit{
     margin-top: 1rem;
@@ -295,7 +355,74 @@ width: 55%;
         font-size: 1.5rem;
         margin-top: 3rem;
     }
-}
+
+    .des-tit{
+        font-size: 1.2rem;
+        word-spacing: 4.5px;
+        letter-spacing: 2px;
+        margin-left: 1rem;
+        margin-top: 2rem;
+         
+    }
+    
+    .des-down{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-top: 4rem;
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .planet-box{
+        
+       width: 250px;
+       height: 250px;
+       margin: 0 auto;
+    }
+
+     
+
+    .planet-name{
+        width: 80%;
+        justify-content: space-between;
+        font-size: 1.1rem;
+    }
+
+
+    .planettit{
+        font-size: 3.5rem;
+       
+    }
+
+    .planettxt{
+        font-size: 1rem;
+        line-height: 28px;
+        max-width: 40ch;
+        margin-left: 1rem;
+    }
+
+    .planet-time{
+        width: 80%;
+        
+    }
+
+    .month-txt, .mil-txt{
+        font-size: 1.4rem;
+    }
+
+    .mil-tit, .month-tit{
+        font-size: 0.9rem;
+    }
+    
+    .des-cont{
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto 3rem;
+        padding-left: 0.3rem;
+    }
+} 
+ 
 @media screen and (min-width: 1024px){
 
     nav{
@@ -304,8 +431,11 @@ width: 55%;
     #0b0f1a 0%,
     #252b36 30%,
     #283140 100%
+     
 );;
+display: flex;
 }
+ 
 
 .home-cont{
     width: 100%;
@@ -410,5 +540,8 @@ display: flex;
     .mil-tit, .month-tit{
         font-size: 0.8rem;
     }
-
+    
+    .planet-name p:hover{
+        cursor: pointer;
+    }
 }
