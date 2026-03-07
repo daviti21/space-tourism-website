@@ -542,6 +542,6 @@ display: flex;
     }
     
     .planet-name p:hover{
-        cursor: pointer;
+        cursor: pointerc;
     }
 }
