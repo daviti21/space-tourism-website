@@ -1,27 +1,22 @@
 const body = document.querySelector("body");
 
-const backgrounds = {
-    "index.html": {
-        desktop: "./assets/home/background-home-desktop.jpg",
-        tablet: "./assets/home/background-home-tablet.jpg",
-        mobile: "./assets/home/background-home-mobile.jpg"
-    },
-    "crew.html": {
-        desktop: "./assets/crew/background-crew-desktop.jpg",
-        tablet: "./assets/crew/background-crew-tablet.jpg",
-        mobile: "./assets/crew/background-crew-mobile.jpg"
-    },
-    "destination.html": {
-        desktop: "./assets/destination/background-destination-desktop.jpg",
-        tablet: "./assets/destination/background-destination-tablet.jpg",
-        mobile: "./assets/destination/background-destination-mobile.jpg"
-    },
-    "technology.html": {
-        desktop: "./assets/technology/background-technology-desktop.jpg",
-        tablet: "./assets/technology/background-technology-tablet.jpg",
-        mobile: "./assets/technology/background-technology-mobile.jpg"
-    }
-};
+ const backgrounds = { 
+    "index.html": 
+    { desktop: "background-home-desktop.jpg",
+         tablet: "background-home-tablet.jpg",
+          mobile: "background-home-mobile.jpg" },
+  "crew.html":
+   { desktop: "background-crew-desktop.jpg", 
+    tablet: "background-crew-tablet.jpg",
+     mobile: "background-crew-mobile.jpg" }, 
+   "destination.html": 
+   { desktop: "background-destination-desktop.jpg",
+     tablet: "background-destination-tablet.jpg",
+      mobile: "background-destination-mobile.jpg" },
+    "technology.html": 
+    { desktop: "background-technology-desktop.jpg", 
+        tablet: "background-technology-tablet.jpg",
+         mobile: "background-technology-mobile.jpg" } };
 
  const currentPage = window.location.pathname.split("/").pop() || "index.html";;
 
