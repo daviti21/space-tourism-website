@@ -15,6 +15,11 @@ fetch('header.html')
  })
     })
     .catch(err => console.error('Header load failed:', err));
+
+    const logo = document.querySelector(".logo-box");
+logo.addEventListener("click", () => {
+    window.location.href = "index.html";
+});
     
   
 
