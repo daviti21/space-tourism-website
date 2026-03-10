@@ -53,9 +53,10 @@ function planetInf(){
     const planetBox = document.querySelector(".planet-box");
      
     nameP.forEach(el => {
+        nameP[0].click()
         el.addEventListener("click", () => {
                 document.querySelectorAll(".down-line").forEach(line => line.remove());
-
+      
         
         const downLine = document.createElement("div");
         downLine.classList.add("down-line");
@@ -102,7 +103,7 @@ function crewInf(){
     const personBox = document.querySelector(".person-box");
 
     crewButton.forEach(el => {
-        
+        crewButton[0].click();
         el.addEventListener("click", () => {
              crewButton.forEach(btn => {
                 btn.style.backgroundColor = "#25262a"
@@ -140,3 +141,45 @@ function crewInf(){
     })
 }
 crewInf()
+
+
+function tecInf(){
+    const tecButtons = document.querySelectorAll(".tec-btn");
+    const tecTit = document.querySelector(".tec-tit");
+    const tecTxt = document.querySelector(".tec-txt");
+    const tecImg = document.querySelector(".tec-img");
+    const minSize = 1024;
+    const imgType = window.innerWidth <= minSize ? "landscape" : "portrait";
+      
+    tecButtons.forEach(el => {
+       
+        el.addEventListener("click", () => {
+            tecButtons.forEach(btn => {
+                  btn.style.color = "#fff";
+                btn.style.border = "0.5px solid rgba(255, 255, 255, 0.397)";
+                btn.style.backgroundColor = "transparent";
+            })
+
+            el.style.color = "#0b0d19";
+            el.style.backgroundColor = "#fff"
+
+            if(el.id.includes("tec1")){
+                tecTit.textContent = "Launch vehicle";
+                tecTxt.textContent = "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!";
+                tecImg.style.backgroundImage = `url("image-launch-vehicle-${imgType}.jpg")`;
+            }else if(el.id.includes("tec2")){
+                tecTit.textContent = "Space capsule"
+                 tecTxt.textContent= "capsule A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.";   
+                    tecImg.style.backgroundImage = `url("image-space-capsule-${imgType}.jpg")`;
+                 
+        }else if(el.id.includes("tec3")){
+                tecTit.textContent = "Spaceport"
+                 tecTxt.textContent= "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth's rotation for launch.";
+                    tecImg.style.backgroundImage = `url("image-spaceport-${imgType}.jpg")`;
+        }
+    })
+    })
+    tecButtons[0].click()
+}
+
+tecInf()

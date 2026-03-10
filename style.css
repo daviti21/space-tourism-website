@@ -76,7 +76,7 @@ nav a{
     }
 
     .des-tit{
-        color: #fbffff;
+        color: #ffffff;
     }
 
     .month-tit, .mil-tit{
@@ -103,7 +103,7 @@ nav a{
 }
 
 .planettxt{
-    color: #787b8b;
+    color: rgb(190, 191, 199);
 }
 
 .planettit, .crew-name{
@@ -135,7 +135,7 @@ font-family: "Cinzel", sans-serif;
  }
 
  .crew-txt{
-    color: #b0b3be;
+    color: rgb(190, 191, 199);
  }
 
  .crew-btn{
@@ -168,11 +168,41 @@ font-family: "Cinzel", sans-serif;
      
 }
 
+.tec-buttons{
+    display: flex;
+  
+  }
+
+  .tec-int{
+    color:#7d8194 ;
+  }
+
+  .tec-tit{
+    color: #ffffff;
+  }
+
+  .tec-tit {
+    font-family: "Cinzel", sans-serif;
+
+  }
+
+  .tec-txt{
+    color: rgb(190, 191, 199);
+  }
+
+   .tec-btn{
+    border-radius: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.397);
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    
+  }
 
 
  
 @media screen and (max-width: 480px){
- #bod-tit,.home-cont, .des-cont, .crew-cont{
+ #bod-tit,.home-cont, .des-cont, .crew-cont, .tec-cont{
        width: 98%;
     }
  .planet-time{
@@ -319,6 +349,12 @@ font-family: "Cinzel", sans-serif;
         margin: 0 auto 2rem;
         padding-left: 0.3rem;
     }
+
+    .tec-cont{
+         max-width: 480px;
+        width: 100%;
+        margin: 0 auto 2rem;
+    }
     .down-line{
         max-width: 70px;
         height: 2px;
@@ -380,6 +416,50 @@ font-family: "Cinzel", sans-serif;
   .crew-cont{
     margin-bottom: 3rem;
   }
+   
+  .tec-img{
+    max-width: 430px;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    background-image: url('image-launch-vehicle-landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tec-infbox{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .tec-btn{
+    font-size: 0.85rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  .tec-buttons{
+    width: 120px;
+    flex-direction: row;
+     margin: 0 auto;
+    justify-content: space-around;
+     
+  }
+
+  .tec-int{
+    font-size: 0.9rem;
+  }
+  .tec-tit{
+    font-size: 1.2rem;
+  }
+  
+  .tec-txt{
+    font-size: 0.85rem;
+    max-width: 40ch;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -565,6 +645,56 @@ width: 55%;
         height: 100%;
          
     }
+    .tec-cont{
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto 3rem;
+    }
+    .tec-img{
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+    height: 270px;
+    background-image: url('image-launch-vehicle-landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tec-infbox{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .tec-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;
+
+  }
+
+  
+
+  .tec-buttons{
+    width: 150px;
+    flex-direction: row;
+     margin: 0 auto;
+    justify-content: space-around;
+     
+  }
+
+   
+  .tec-tit{
+    font-size: 1.4rem;
+  }
+  
+  .tec-txt{
+    font-size: 0.95rem;
+    max-width: 40ch;
+    margin: 0 auto;
+    line-height: 24px;
+  }
+
 } 
  
 @media screen and (min-width: 1025px){
@@ -786,5 +916,83 @@ display: flex;
     width: 85%;
     margin: 0 auto;
    }
+
+
+      .tec-cont{
+       
+        width: 98%;
+        margin: 0 auto 3rem;
+     
+       
+        }
+    .tec-img{
+     width: 450px;
+    height: 450px;
+    background-image: url('image-launch-vehicle-portrait.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1rem;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
     
+    height: max-content;
+    margin: auto;
+  }
+  .tec-infbox{
+    width: max-content;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .tec-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 1.05rem;
+
+  }
+
+  
+
+  .tec-buttons{
+    height: 300px;
+    flex-direction: column;
+     margin: 0 auto;
+    justify-content: space-around;
+     margin-right: 2rem;
+  }
+
+   
+  .tec-tit{
+    font-size: 2.8rem;
+   min-width: 20ch;
+   margin-bottom: 1rem;
+}
+  
+  .tec-txt{
+    font-size: 0.85rem;
+    max-width: 35ch;
+     
+    line-height: 24px;
+  }
+    
+  .tec-int{
+    font-size: 1.1rem;
+    margin-bottom: -2rem;
+  }
+
+  .tec-cont .des-tit{
+    margin-left: 5%;
+  }
+
+  .tec-btn:hover{
+    cursor: pointer;
+  }
 }
